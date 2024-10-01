@@ -10,9 +10,9 @@ contract VotingSystem {
     Proposal[] public proposals;
 
     constructor(string[] memory proposalNames) {
-        for (uint256 i = 0; i < proposalNames.length; i++) {
+        for (uint256 x = 0; x < proposalNames.length; x++) {
             proposals.push(Proposal({
-                name: proposalNames[i],
+                name: proposalNames[x],
                 voteCount: 0
             }));
         }

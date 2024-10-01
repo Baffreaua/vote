@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.26;
 
-import "forge-std/Test.sol"; // Assurez-vous que ce chemin est correct.
-import "../src/VotingSystem.sol"; // Assurez-vous que ce chemin est correct.
+import "forge-std/Test.sol";
+import "../src/VotingSystem.sol";
 
 contract VotingSystemTest is Test {
     VotingSystem votingSystem;
@@ -11,6 +11,7 @@ contract VotingSystemTest is Test {
         string;
         proposalNames[0] = "Proposal 1";
         proposalNames[1] = "Proposal 2";
+
         votingSystem = new VotingSystem(proposalNames);
     }
 
